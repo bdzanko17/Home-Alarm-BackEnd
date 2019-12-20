@@ -1,0 +1,22 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  margin: 0px;
+  background:red;
+}
+
+a {
+  color: brown;
+}
+div.naslov{
+  color: rebeccapurple;
+  text-align: center;
+  margin: auto;
+}
+div.status{
+  color: chartreuse;
+  text-align: left;
+  font-size: large;
+  background: red;
+  margin: 0px;
+}
