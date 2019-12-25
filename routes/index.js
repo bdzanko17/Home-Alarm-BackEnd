@@ -16,17 +16,22 @@ var router = express.Router();
 //
 // });
 
-var globalna = "Alarm je ugasen";
+var status = "Alarm je ugasen";
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.send(globalna);
+  res.send(status);
 });
 
 
 router.get('/2', function(req, res, next) {
-  globalna = "Alarm je Upaljen";
-  res.send(globalna);
+  status = "Alarm je Upaljen";
+  res.send(status);
+});
+
+router.post('/',function (req,res,next) {
+  console.log(req.body.statuss);
+  res.send('proslo');
 });
 
 router.get('/3', function(req, res, next) {
