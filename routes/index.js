@@ -31,6 +31,7 @@ router.get('/2', function (req, res, next) {
 
 router.post('/ugasi', function (req, res, next) {
   status = "Alarm je ugasen";
+
   let object ={stat:status}
   res.send(object);
 });
