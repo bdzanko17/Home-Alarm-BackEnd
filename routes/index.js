@@ -19,22 +19,23 @@ var router = express.Router();
 var status = "Alarm je ugasen";
 
 /* GET home page. */
-router.get('/', function(req, res, next) {
-  res.send(status);
+router.get('/', function (req, res, next) {
+    res.send(status);
 });
 
 
-router.get('/2', function(req, res, next) {
-  status = "Alarm je Upaljen";
-  res.send(status);
+router.get('/2', function (req, res, next) {
+    status = "Alarm je Upaljen";
+    res.send(status);
 });
 
-router.post('/',function (req,res,next) {
-  console.log(req.body.statuss);
-  res.send('proslo');
+router.post('/ugasi', function (req, res, next) {
+  status = "Alarm je ugasen";
+  let object ={stat:status}
+  res.send(object);
 });
 
-router.get('/3', function(req, res, next) {
+router.get('/3', function (req, res, next) {
 
 });
 
